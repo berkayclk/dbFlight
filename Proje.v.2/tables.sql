@@ -13,21 +13,20 @@ CREATE TABLE COMPANY(
 	Company_id int PRIMARY KEY NOT NULL ,
 	Name nvarchar(50) NOT NULL,
 	Foundation_date date  NULL,
-	Headquarters nvarchar(50)  NULL
+	Headquarters nvarchar(50)  NULL,
+	Company_type nvarchar(50) not null
 ) 
 GO
 /********** AIRPLANE_COMPANY **********/
 CREATE TABLE AIRPLANE_COMPANY(
-	Airplane_company_id int PRIMARY KEY NOT NULL ,
-	Company_id int NOT NULL foreign key references COMPANY(Company_id),
+	Airplane_company_id int PRIMARY KEY NOT NULL foreign key references COMPANY(Company_id),
 	Largest_model nvarchar(50) null
 	
 ) 
 GO
 /********** AIRLANE_COMPANY **********/
 CREATE TABLE AIRLANE_COMPANY(
-	Airline_id int PRIMARY KEY NOT NULL ,
-	Company_id int NOT NULL foreign key references COMPANY(Company_id),
+	Airline_company_id int PRIMARY KEY NOT NULL foreign key references COMPANY(Company_id),
 	Total_airplane_count int null,
 	Free_bag_limit int null
 ) 
@@ -38,7 +37,7 @@ GO
 
 CREATE TABLE FLIGHT(
 	Flight_number int PRIMARY KEY NOT NULL,
-	Airline_id int not null foreign key references AIRLANE_COMPANY(Airline_id),
+	Airline_company_id int not null foreign key references AIRLANE_COMPANY(Airline_company_id),
 	Weekdays nvarchar(50) NOT NULL
 ) 
 GO

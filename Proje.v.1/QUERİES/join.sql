@@ -30,7 +30,7 @@ where cast(li.Flight_number as varchar)+CAST(li.Leg_number as varchar)+CAST(li.D
 		 group by s.Flight_number,s.Leg_number,s.Date
 		 order by count(*) desc)
 
-/*********    UÇUÞ ÜCRETLERÝ    *******/
+/*********    UÇUÞ ÜCRETLERÝ    *******/ /*sorguda null deðeri döner. fare kaydý olmayan uçuþlarda null gelir.*/
 SELECT f.Flight_number , f.Airline, f.Weekdays,  fa.Amount, fa.Restriction
 FROM FLIGHT f
 JOIN FARE fa on fa.Flight_number = f.Flight_number

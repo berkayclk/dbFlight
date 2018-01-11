@@ -127,18 +127,7 @@ INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1040, 410
 INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1041, 4201, 129, 'Ekonomi')
 INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1041, 4202, 206, 'Bussines Class')
 INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1041, 4203, 283, 'First Class')
-INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1042, 4301, 115, 'Ekonomi')
-INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1042, 4302, 176, 'Bussines Class')
-INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1042, 4303, 237, 'First Class')
-INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1043, 4401, 121, 'Ekonomi')
-INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1043, 4402, 157, 'Bussines Class')
-INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1043, 4403, 193, 'First Class')
-INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1044, 4501, 57, 'Ekonomi')
-INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1044, 4502, 116, 'Bussines Class')
-INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1044, 4503, 175, 'First Class')
-INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1045, 4601, 81, 'Ekonomi')
-INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1045, 4602, 107, 'Bussines Class')
-INSERT INTO FARE (Flight_number ,Fare_code,Amount,Restriction) VALUES (1045, 4603, 133, 'First Class')
+
 
 
 END

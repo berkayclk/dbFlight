@@ -1,5 +1,4 @@
 ﻿
-
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -21,7 +20,7 @@ BEGIN
  
        IF @max_seats < (select Total_number_of_seats from inserted)
        BEGIN
-              RAISERROR('Uçaðýn alabileceði toplam koltuk sayýsý aþýldý.',16 ,1)
+              RAISERROR('Ucagin alabilecegi yolcu sayisi asildi.',16 ,1)
               ROLLBACK
        END
        ELSE
@@ -216,7 +215,7 @@ BEGIN
 	  
        IF @lastLegArrivalAirport != @currentLegDepartureAirport
        BEGIN
-              RAISERROR('Uçuþ ayaðýnda kalkýþ havaalaný, son ayaktaki iniþ havaalaný olmalýdýr. ',16 ,1)
+              RAISERROR('Ucusun kalkis havaalani son ayaktaki inis ile ayni olmalidir. ',16 ,1)
               ROLLBACK
        END
        ELSE
